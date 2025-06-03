@@ -142,5 +142,7 @@ void updateLCD() {
       lcd.print("   ");
     }
   }
-  dots = (dots+1)%4;
+  if (dolewaSie) {
+    dots = (dots + 1) % 4;
+  }
 }
